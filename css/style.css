@@ -291,13 +291,13 @@ button {
 }
 
 .main_bt {
-     background: #ffbf0079;
-     color: #000;
+     background: transparent;
+     border: 2px solid #FFBF00;
+     color: #FFBF00;
      padding: 15px 60px 15px 60px;
      float: left;
      font-size: 15px;
      font-weight: 400;
-     border: solid #FFBF00 2px;
      border-radius: 30px;
      margin: 15px 0px 60px 0px;
 }
@@ -310,9 +310,9 @@ a.readmore_bt {
 
 .main_bt:hover,
 .main_bt:focus {
-     background: #000;
-     border: solid #000 2px;
-     color: #fff;
+     /* background: #000; */
+     color: #FFBF00;
+     background-color: #ffbf0079;
 }
 
 
@@ -445,6 +445,7 @@ a.readmore_bt {
      box-shadow: #060606 0px 0px 3px 0px;
      z-index: 999;
      width: 100%;
+     height: 20%;
      left: 0;
      top: 0;
      background-color: #196F3D ;
@@ -454,6 +455,11 @@ a.readmore_bt {
      background-repeat: no-repeat;
      min-height: 110px;
      padding-top: 50px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 100;
 }
 
 .logo {
@@ -1625,12 +1631,13 @@ input[type="radio"] .styled:checked+label::after {
 }
 .banner-main {
      position: relative;
+     margin-top: 6%;
 }
 .banner-main .text-bg h1 {
      font-size: 90px;
      line-height: 108px;
      text-transform: uppercase;
-     color: #00b34a;
+     color: #FFBF00;
      font-weight: bold;
      padding-bottom: 35px;
      padding-top: 25px;
@@ -1678,9 +1685,11 @@ input[type="radio"] .styled:checked+label::after {
 }
 .textarea {
      padding: 6px 0px 0px 19px;
-     color: #655f5f !important;
+     color: #000000 !important;
+     background-color: #ffffffbe;
      width: 100%;
-     border: #b1b0b0 solid 1px;
+     border: none;
+     border-radius: 5px;
      height: 65px;
      margin-bottom: 20px;
 }
@@ -1758,6 +1767,7 @@ input[type="radio"] .styled:checked+label::after {
      flex-wrap: wrap;
      justify-content: center;
 }
+
 .about .about-box p {
      font-size: 17px;
      line-height: 32px;
@@ -1792,11 +1802,14 @@ input[type="radio"] .styled:checked+label::after {
      top: -30px;
      right: -78px;
 }
+.palne-img-area img{
+     filter: brightness(0) sepia(0) hue-rotate(1deg) saturate(0) ;
+}
 .about a {
      width: 200px;
      font-size: 17px;
      padding: 20px 0px;
-     background-color: #ee580f;
+     background-color: #FFBF00;
      color: #fff;
      display: inline-block;
      line-height: 20px;
@@ -1859,7 +1872,7 @@ input[type="radio"] .styled:checked+label::after {
      padding-top: 20px;
      font-size: 25px;
      line-height: 31px;
-     color: #100808;
+     color: #3a3a3ab7;
 }
 .traveling-box p {
      color: #100808;
@@ -1975,7 +1988,7 @@ input[type="radio"] .styled:checked+label::after {
      font-size: 20px;
      line-height: 29px;
      padding: 10px 10px 10px 10px;
-     color: #282727;
+     color: #cf9b00;
 }
 .item p {
      padding: 0px 10px 10px 10px;
@@ -2037,6 +2050,7 @@ input[type="radio"] .styled:checked+label::after {
 }
 .titlepage {
      text-align: center;
+     margin-top: 3rem;
 }
 .titlepage h2 {
      padding: 0px 0px 20px 0px;
@@ -2096,8 +2110,10 @@ input[type="radio"] .styled:checked+label::after {
      color: #fff;
 }
 .blog .blog-box h3 {
-     font-size: 20px;
+     font-size: 23px;
+     font-weight: normal;
      line-height: 30px;
+     color: #cf9b00;
 }
 .blog .blog-box p {
      font-size: 16px;
@@ -2129,7 +2145,9 @@ label {
      margin-bottom: 5px;
 }
 .footer {
-     background-color: #022739;
+     background-color: #000;
+     display: flex;
+     gap: 3rem;
      margin-top: 90px;
 }
 .footer .Follow {
@@ -2146,17 +2164,20 @@ label {
      padding-bottom: 2px;
      padding-bottom: 27px;
 }
+.footer .Follow p{
+     color: #fff;
+}
 .footer span {
      font-size: 17px;
      display: block;
-     color: #fff;
+     color: #878686;
 }
 ul.link li a {
-     color: #fff;
+     color: #878686;
      font-size: 17px;
 }
 ul.link li a:hover {
-     color: #878686;
+     color: #cf9b00;
 }
 .footer .Newsletter {
      padding: 13px 26px;
@@ -2164,20 +2185,24 @@ ul.link li a:hover {
      padding-right: 26px;
      padding-bottom: 10px;
      padding-left: 15px;
-     border: #fff solid 1px;
+     border: none;
+     border-radius: 5px;
+     background-color: #ffffffbe;
      width: 100%;
      margin-bottom: 15px;
 }
 .footer .Subscribe {
+     font-weight: bold;
      padding: 10px 30px;
-     border: #0e0c0c solid 1px;
-     background: #0e0c0c;
-     color: #fff;
+     background: transparent;
+     border: 2px solid #cf9b00;
+     border-radius: 3rem;
+     width: 10rem;
+     color: #cf9b00;
      float: right;
 }
 .footer .Subscribe:hover {
-     color: #fff;
-     background-color: #15cfe5;
+     background-color: #ffbf003a;
 }
 .pdn-top-30 {
      padding-top: 35px;

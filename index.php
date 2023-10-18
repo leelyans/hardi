@@ -19,7 +19,7 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="images/final logo.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -56,6 +56,66 @@
          color: rgb(36, 36, 36)k;
          border: none;
       }
+      .row {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         margin: 0 -15px;
+      }
+
+      /* Style the individual boxes */
+      .box {
+         /* background-color: #f7f7f7; */
+         border: 1px solid #e0e0e0;
+         padding: 20px;
+         text-align: center;
+         margin: 15px;
+         border-radius: 5px;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Style the box title */
+      .title {
+         font-size: 18px;
+         color: #333;
+         margin-top: 10px;
+      }
+      .title a{
+         color: #FFBF00;
+         font-size: 18px;
+      }
+
+      /* Style the box description */
+      .description {
+         font-size: 14px;
+         color: #777;
+         margin-top: 10px;
+      }
+
+      /* Style the box image */
+      .image-container img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 5px;
+      }
+
+      /* Animation for the wow class (You can add your own animation) */
+      .wow {
+         animation-name: bounceInUp;
+      }
+
+      /* Adjust animation duration and delay */
+      [data-wow-duration="1.4s"] {
+         animation-duration: 1.4s;
+      }
+
+      [data-wow-delay="0.1s"] {
+         animation-delay: 0.1s;
+      }
+
+      [data-wow-delay="0.2s"] {
+         animation-delay: 0.2s;
+      }
    </style>
    <!-- body -->
    <body class="main-layout">
@@ -76,7 +136,7 @@
                            <ul>
                               <li><img src="images/1.png" alt="#"/> Kigali Rwanda</li>
                               <li><img src="images/2.png" alt="#"/> +250  789 288 770</li>
-                              <li><img src="images/3.png" alt="#"/> harditoursandtravelagency@hmail.com</li>
+                              <li><img src="images/3.png" alt="#"/> harditoursandtravelagency@gmail.com</li>
                            </ul>
                         </div>
                      </div>
@@ -98,7 +158,7 @@
                            <nav class="main-menu">
                               <ul class="menu-area-main">
                                  <li class="active"> <a href="#">Home</a> </li>
-                                 <li> <a href="#about">About</a> </li>
+                                 <li> <a href="services.php">Services</a> </li>
                                  <li><a href="#travel">Travel</a></li>
                                  <li><a href="#blog">Blog</a></li>
                                  <li><a href="#contact">Contact Us</a></li>
@@ -115,7 +175,7 @@
       <!-- end header -->
       <section >
          <div class="banner-main">
-            <img src="images/trip.jpg" style="width: 100%;" alt="#"/>
+            <img src="images/rwanda-lake-kivu-1.jpg" style="width: 100%;" alt="#"/>
             <div class="container">
                <div class="text-bg">
                   <h1>HARDI<br><strong class="white"> TOURS AND TRAVEL AGENCY</strong></h1>
@@ -193,6 +253,7 @@
          </div>
       </div>
       <!-- end about -->
+      
       <!-- traveling -->
       <div id="travel" class="traveling">
          <div class="container">
@@ -203,49 +264,52 @@
                      <!-- <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>  -->
                   </div>
                </div>
-            </div>
-            <div class="row">
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                  <div class="traveling-box">
-                     <i><img src="images/car.webp" alt="icon" class="image-container" /></i>
-                     <h3 style="font-size: 20px; font-weight: bold;">Car Rentals</h3>
-                     <!-- <p>going to use a passage of Lorem Ipsum, you need to be</p> -->
-                     <div class="read-more">
-                        <!-- <a href="#">Read More</a> -->
-                     </div>
-                  </div>
+            </div><section id="services" class="section-bg">
+         <div class="container">
+   
+           <div class="row">
+   
+             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+               <div class="box">
+                  <i><img src="images/car.webp" alt="icon" class="image-container" /></i>
+                 <h4 class="title"><a href="">Self Driving Car Rentals</a></h4>
                </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                  <div class="traveling-box">
-                     <i><img src="images/forests.jpeg" alt="icon" class="image-container" /></i>
-                     <h3 style="font-size: 20px; font-weight: bold;">Mountains tours</h3>
-                     <!-- <p>going to use a passage of Lorem Ipsum, you need to be</p> -->
-                     <div class="read-more">
-                        <!-- <a href="#">Read More</a> -->
-                     </div>
-                  </div>
+             </div>
+             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+               <div class="box">
+                 <i><img src="images/forests.jpeg" alt="icon" class="image-container" /></i>
+                 <h4 class="title"><a href="">Mountains tours</a></h4>
                </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                  <div class="traveling-box">
-                     <i><img src="images/Cchinpanze.jpeg" alt="icon" class="image-container" /></i>
-                     <h3 style="font-size: 20px; font-weight: bold;">Chimpanze trekking</h3>
-                     <!-- <p>going to use a passage of Lorem Ipsum, you need to be</p> -->
-                     <div class="read-more">
-                        <!-- <a href="#">Read More</a> -->
-                     </div>
-                  </div>
+             </div>
+   
+             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+               <div class="box">
+                  <i><img src="images/Cchinpanze.jpeg" alt="icon" class="image-container" /></i>
+                 <h4 class="title"><a href="">Chimpanze trekking</a></h4>
                </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                  <div class="traveling-box">
-                     <i><img src="images/download (1).jpg" alt="icon" class="image-container" /></i>
-                     <h3 style="font-size: 20px; font-weight: bold;">Safari Planning</h3>
-                     <!-- <p>going to use a passage of Lorem Ipsum, you need to be</p> -->
-                     <div class="read-more">
-                           <!-- <a href="#">Read More</a> -->
-                     </div>
-                  </div>
+             </div>
+             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+               <div class="box">
+                  <i><img src="images/G03 (1).jpg" alt="icon" class="image-container" /></i>
+                 <h4 class="title"><a href="">Safari Planning</a></h4>
                </div>
-            </div>
+             </div>
+   
+             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+               <div class="box">
+                  <i><img src="images/steptodown.com225425.jpg" alt="icon" class="image-container" /></i>
+                 <h4 class="title"><a href="">Airport Pickup and Dropoff</a></h4>
+               </div>
+             </div>
+             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+               <div class="box">
+                 <i><img src="images/4JWSFd.jpg" alt="icon" class="image-container" /></i>
+                 <h4 class="title"><a href="">Dedicated Driver Car Rental</a></h4>
+               </div>
+             </div>
+   
+           </div>
+   
          </div>
       </div>
       <!-- end traveling -->
@@ -375,19 +439,26 @@
          <div id="contact" class="footer">
             <div class="container">
                <div class="row pdn-top-30">
-                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <!-- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                      <ul class="location_icon">
                         <li> <a href="#"><img src="icon/facebook.png"></a></li>
                         <li> <a href="#"><img src="icon/Twitter.png"></a></li>
                         <li> <a href="#"><img src="icon/linkedin.png"></a></li>
                         <li> <a href="#"><img src="icon/instagram.png"></a></li>
                      </ul>
-                  </div>
+                  </div> -->
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                      <div class="Follow">
                         <h3>CONTACT US</h3>
                         <span>KIGALI - RWANDA<br>
-                        +250 789 288 770</span>
+                        +250 789 288 770</span><br>
+                        <ul class="location_icon">
+                           <li> <a href="#"><img src="icon/facebook.png"></a></li>
+                           <li> <a href="#"><img src="icon/Twitter.png"></a></li>
+                           <li> <a href="https://www.instagram.com/hardi.tours_and_travel_agency/"><img src="icon/instagram (1).png"></a></li>
+                        </ul>
+                        <br>
+                        <img src="images/rwanda-development-board.jpg" alt="">
                      </div>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
@@ -404,7 +475,7 @@
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                      <div class="Follow">
-                        <h3> Contact</h3>
+                        <h3> Feedback</h3>
                         <div class="row">
                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                               <input class="Newsletter" placeholder="Name" type="text">
@@ -413,7 +484,7 @@
                               <input class="Newsletter" placeholder="Email" type="text">
                            </div>
                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                              <textarea class="textarea" placeholder="comment" type="text">Comment</textarea>
+                              <textarea class="textarea" placeholder="Comment" type="text"></textarea>
                            </div>
                         </div>
                         <button class="Subscribe">Submit</button>
