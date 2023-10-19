@@ -115,12 +115,18 @@ button:focus {
      outline: none;
 }
 
-ul,
-li,
+ul, 
+li, 
 ol {
-     margin: 0px;
+     gap: 1rem;
+     justify-content: center;
      padding: 0px;
      list-style: none;
+     cursor: pointer;
+ }
+
+.filter-active{
+     color: #FFBF00;
 }
 
 p {
@@ -437,35 +443,36 @@ a.readmore_bt {
 
 .header {
      /* background: url(../images/header-bg.jpg); */
-     background-image: linear-gradient(to top, #007531d0 0%, #083f1f 100%);
-     background-color: rgba(0, 0, 0, 0);
-     background-repeat: repeat;
-     background-size: auto;
-     background-color: lina#196F3D;
-     box-shadow: #060606 0px 0px 3px 0px;
-     z-index: 999;
-     width: 100%;
-     height: 20%;
-     left: 0;
-     top: 0;
-     background-color: #196F3D ;
-     padding: 0;
-     padding-top: 0px;
-     background-size: 100% 100%;
-     background-repeat: no-repeat;
-     min-height: 110px;
-     padding-top: 50px;
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     z-index: 100;
+    background-image: linear-gradient(to top, #1E2722 0%, #070a0c 100%);
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: repeat;
+    background-size: auto;
+    background-color: lina#196F3D;
+    box-shadow: #060606 0px 0px 3px 0px;
+    z-index: 999;
+    width: 100%;
+    height: 20%;
+    left: 0;
+    top: 0;
+    background-color: #196F3D;
+    padding: 0;
+    padding-top: 0px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 110px;
+    padding-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .logo {
      float: left;
      position: relative;
-     top: -22px;
+     top: -30px;
+     width: 10rem;
 }
 
 nav.main-menu {
@@ -1083,12 +1090,12 @@ ul.top_icon li a {
      font-size: 16px;
      display: block;
      font-weight: 500;
-     color: #000;
+     color: #e1e1e1;
      padding: 15px 26px;
      padding-top: 24px;
 }
-
-
+.main-menu ul>li a:hover{
+     color: #838383;
 }
 .main-menu ul li:last-child a {
      padding-right: 0;
@@ -1662,8 +1669,7 @@ input[type="radio"] .styled:checked+label::after {
      line-height: 25px;
 }
 .nice-select.form-control {
-     width: 100%;
-     height: 40px;
+     display: none;
 }
 .main-form {
      background: #ffffffe8;

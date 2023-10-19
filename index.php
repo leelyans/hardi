@@ -31,9 +31,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <style>
-      .logo{
-         width: 7rem;
-      }
       .image-container {
          max-width: 100%;
          max-height: 7rem;
@@ -116,6 +113,43 @@
       [data-wow-delay="0.2s"] {
          animation-delay: 0.2s;
       }
+
+      .book_btn{
+         background: #000;
+         color: #c0c0c0;
+         width: 8rem;
+         height: 2.7rem;
+         float: left;
+         font-size: 15px;
+         /* font-weight: bold; */
+         border-radius: .5rem;
+         margin: 15px 0px 60px 15px;
+      }
+      .book_btn:hover{
+         color: #FFBF00;
+      }
+      .col-md-9{
+         width: 100%;
+      }
+      .main-form .row{
+         width: 100%;
+      }
+      .main-form .row_row{
+         display: flex;
+         flex-direction: row;
+         width: 100%;
+      }
+      .row_row_row{
+         height: auto;
+         width: 50%;
+      }
+      .row_row_row select, .row_row_row input{
+         width: 20rem;
+         /* margin-bottom: 2rem; */
+      }
+      .banner-main{
+         margin-top: 7rem;
+      }
    </style>
    <!-- body -->
    <body class="main-layout">
@@ -158,10 +192,9 @@
                            <nav class="main-menu">
                               <ul class="menu-area-main">
                                  <li class="active"> <a href="#">Home</a> </li>
-                                 <li> <a href="services.php">Services</a> </li>
-                                 <li><a href="#travel">Travel</a></li>
-                                 <li><a href="#blog">Blog</a></li>
-                                 <li><a href="#contact">Contact Us</a></li>
+                                 <li> <a href="car rental.php">Car Rental</a> </li>
+                                 <li><a href="travel.php">Travel</a></li>
+                                 <li><a href="#contact">Services</a></li>
                               </ul>
                            </nav>
                         </div>
@@ -175,46 +208,89 @@
       <!-- end header -->
       <section >
          <div class="banner-main">
-            <img src="images/rwanda-lake-kivu-1.jpg" style="width: 100%;" alt="#"/>
+            <img src="images/rwanda-lake-kivu-1.jpg" style="width: 100%; " alt="#"/>
             <div class="container">
-               <div class="text-bg">
+               <div class="text-bg" style="margin-top: 7rem;">
                   <h1>HARDI<br><strong class="white"> TOURS AND TRAVEL AGENCY</strong></h1>
                   <div class="button_section"> <a class="main_bt" href="#">Read More</a>  </div>
                   <div class="container">
                      <form class="main-form">
-                        <h3>Find Your Tour</h3>
+                        <h3>BOOK TRAVEL</h3>
                         <div class="row">
-                           <div class="col-md-9">
-                              <div class="row">
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <label >Keywords</label>
-                                    <input class="form-control" placeholder="" type="text" name="">
+                           <div class="row_row">
+                                 <div class="row_row_row">
+                                    <form action="" method="post">
+                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                          <label >Email</label>
+                                          <input class="form-control" placeholder="Any" type="date" name="Any">
+                                       </div>
+                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                          <label>Attractions</label>
+                                          <select name="attractions" class="form-control">
+                                             <option value="">Canopy Walk</option>
+                                             <option value="">Chimpanze Trekking</option>
+                                             <option value="">Gorilla</option>
+                                             <option value="">Wild Life</option>
+                                             <option value="">Water Fall</option>
+                                             <option value="">Country Lakes</option>
+                                             <option value="">City Tour</option>
+                                          </select>
+                                       </div>
+                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                          <label >Date</label>
+                                          <input class="form-control" placeholder="Any" type="date" name="Any">
+                                       </div>
+                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                          <label >Number of people</label>
+                                          <select name="attractions" class="form-control">
+                                             <option value="">1 PERSON</option>
+                                             <option value="">2 PEOPLE</option>
+                                             <option value="">3 PEOPLE</option>
+                                             <option value="">4 - 7 PEOPLE</option>
+                                          </select>
+                                       </div>
+                                       <button type="submit" class="book_btn">Book now</button>
+                                    </form>
                                  </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <label >Category</label>
-                                    <select class="form-control" name="Any">
-                                       <option>Any</option>
-                                       <option>Option 1</option>
-                                       <option>Option 2</option>
-                                       <option>Option 3</option>
-                                    </select>
-                                 </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <label >Min Price</label>
-                                    <input class="form-control" placeholder="00.0" type="text" name="00.0">
-                                 </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <label >Duration</label>
-                                    <input class="form-control" placeholder="Any" type="text" name="Any">
-                                 </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <label >Date</label>
-                                    <input class="form-control" placeholder="Any" type="date" name="Any">
-                                 </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <label >Max Price</label>
-                                    <input class="form-control" placeholder="00.0" type="text" name="00.0">
-                                 </div>
+                              <div class="row_row_row">
+                                 <form action="" method="post">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                          <label >Email</label>
+                                          <input class="form-control" placeholder="Any" type="date" name="Any">
+                                       </div>
+                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                          <label >Date</label>
+                                          <input class="form-control" placeholder="Any" type="date" name="Any">
+                                       </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                       <label >Car Rentals</label>
+                                       <select name="car_rentals" class="form-control">
+                                          <option value="none">Types of cars</option>
+                                          <option value="">TOYOTA RAV4</option>
+                                          <option value="">SAFARI CARS</option>
+                                          <option value="">TOYOTA V8 & TXL</option>
+                                          <option value="">BUS</option>
+                                       </select>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                       <label >Duration</label>
+                                       <select name="car_rentals" class="form-control">
+                                          <option value="">1 DAY</option>
+                                          <option value="">2 - 3 DAYS</option>
+                                          <option value="">3 - 5 DAYS</option>
+                                          <option value="">1 WEEK - </option>
+                                       </select>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                       <label >CATEGORY</label>
+                                       <select name="car_rentals" class="form-control">
+                                          <option value="">SELF DRIVING</option>
+                                          <option value="">DEDICATED DRIVER</option>
+                                       </select>
+                                    </div>
+                                    <button type="submit" class="book_btn">Book now</button>
+                                 </form>
+                                 
                               </div>
                            </div>
                         </div>
@@ -260,7 +336,7 @@
             <div class="row">
                <div class="col-md-12 ">
                   <div class="titlepage">
-                     <h2>Our Services</h2>
+                     <h2>Car Rental</h2>
                      <!-- <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>  -->
                   </div>
                </div>
@@ -348,24 +424,40 @@
                   <div class="col-md-12">
                      <div class="owl-carousel owl-theme">
                         <div class="item">
-                           <img class="img-responsive" src="images/national park.jpeg" alt="#" />
-                           <h3 class="primary">National Parks</h3>
+                           <img class="img-responsive" src="images/forests.jpeg" alt="#" />
+                           <h3 class="primary">Nyungwe National Park</h3>
                            <p>Home of various creatures, animals and a preservation of historical sites.</p>
                         </div>
                         <div class="item">
                            <img class="img-responsive" src="images/nyanza.jpg" alt="#" />
-                           <h3 class="primary">Cultural Places</h3>
+                           <h3 class="primary">King's Palace Nyanza</h3>
                            <p>The roots and base where the history of Rwanda relies on, that impact education</p>
                         </div>
                         <div class="item">
                            <img class="img-responsive" src="images/lake kivu.jpg" alt="#" />
-                           <h3 class="primary">Country Lakes</h3>
+                           <h3 class="primary">Lake Kivu</h3>
                            <p>Lakes plays a big role in agriculture, transportation not undervaluing tourism and recreation</p>
                         </div>
                         <div class="item">
-                           <img class="img-responsive" src="images/images (2).jpg" alt="#" style="height: 272px; object-fit: contain;"/>
+                           <img class="img-responsive" src="images/images (3).jpg" alt="#" style="height: 272px; object-fit: contain;"/>
                            <h3 class="primary">City Tours</h3>
-                           <p>Forests are crucial for water supply, and climate mitigation, balancing conservation with human needs for a sustainable future.</p>
+                           <p>
+                              Best way to explore a city's unique culture and attractions. You will understand what makes the city special.</p>
+                        </div>
+                        <div class="item">
+                           <img class="img-responsive" src="images/Tours-and-travel.jpg" alt="#" style="height: 272px; object-fit: contain;"/>
+                           <h3 class="primary">Akagera National Park</h3>
+                           <p>National parks are nature's treasures, preserving and celebrating the world's most spectacular landscapes and wildlife for everyone to enjoy and cherish.</p>
+                        </div>
+                        <div class="item">
+                           <img class="img-responsive" src="images/huye museum.jpg" alt="#" style="height: 272px; object-fit: contain;"/>
+                           <h3 class="primary">Huye Museum</h3>
+                           <p>Windows to the past, housing a wealth of art, history, and culture. They offer a journey through time and human creativity.</p>
+                        </div>
+                        <div class="item">
+                           <img class="img-responsive" src="images/the-richard-kandt-museum-still-holds-lessons-to-the-rwandan-society.jpg" alt="#" style="height: 272px; object-fit: contain;"/>
+                           <h3 class="primary">richard Kandt Museum</h3>
+                           <p>Windows to the past, housing a wealth of art, history, and culture. They offer a journey through time and human creativity.   </p>
                         </div>
                      </div>
                   </div>

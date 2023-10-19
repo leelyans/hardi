@@ -19,7 +19,7 @@
 </head>
 <style>
     .logo {
-        width: 7rem;
+        width: 10rem;
     }
 
     .image-container {
@@ -48,7 +48,6 @@
         padding: 0;
         border: none;
     }
-
     .row {
         display: flex;
         flex-direction: row;
@@ -63,7 +62,7 @@
         border-radius: 5px;
         padding: 20px;
         margin: 15px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
 
     .currency {
@@ -153,10 +152,10 @@
                         <div class="limit-box">
                             <nav class="main-menu">
                                 <ul class="menu-area-main">
-                                    <li> <a href="/">Home</a> </li>
-                                    <li> <a href="services.php">Services</a> </li>
+                                    <li> <a href="index.php">Home</a> </li>
+                                    <li> <a href="car rental.php">Car Rental</a> </li>
                                     <li class="active"><a href="#">Travel</a></li>
-                                    <li><a href="#contact">Contact Us</a></li>
+                                    <li><a href="#contact">Services</a></li>
                                 </ul>
                             </nav>
                         </div>
