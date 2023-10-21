@@ -152,10 +152,10 @@
         transform: translateY(-50%);
     }
     .banner-main .text-bg h1 {
-        padding-bottom: 6px;
+        padding-bottom: 0;
         padding-top: 25px;
         margin-top: 38px;
-        font-size: 71px;
+        font-size: 60px;
         line-height: 76px;
     }
     .main-form a {

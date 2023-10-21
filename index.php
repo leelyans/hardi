@@ -39,7 +39,8 @@
          font-size: 20px;
       }
       .text-bg strong{
-         font-size: 70px;
+         margin-left: .2rem;
+         font-size: 50px;
       }
       .amazing{
          background-image: url("./images/kigali abstract.jpg");
@@ -117,10 +118,10 @@
       .book_btn{
          background: #000;
          color: #c0c0c0;
-         width: 8rem;
+         width: 62%;
          height: 2.7rem;
          float: left;
-         font-size: 15px;
+         font-size: 18px;
          /* font-weight: bold; */
          border-radius: .5rem;
          margin: 15px 0px 60px 15px;
@@ -145,7 +146,7 @@
       }
       .row_row_row select, .row_row_row input{
          width: 20rem;
-         /* margin-bottom: 2rem; */
+         margin-bottom: 1.5rem;
       }
       .banner-main{
          margin-top: 7rem;
@@ -194,7 +195,7 @@
                                  <li class="active"> <a href="#">Home</a> </li>
                                  <li> <a href="car rental.php">Car Rental</a> </li>
                                  <li><a href="travel.php">Travel</a></li>
-                                 <li><a href="#contact">Services</a></li>
+                                 <li><a href="services.php">Services</a></li>
                               </ul>
                            </nav>
                         </div>
@@ -210,23 +211,24 @@
          <div class="banner-main">
             <img src="images/rwanda-lake-kivu-1.jpg" style="width: 100%; " alt="#"/>
             <div class="container">
-               <div class="text-bg" style="margin-top: 7rem;">
-                  <h1>HARDI<br><strong class="white"> TOURS AND TRAVEL AGENCY</strong></h1>
-                  <div class="button_section"> <a class="main_bt" href="#">Read More</a>  </div>
-                  <div class="container">
-                     <form class="main-form">
+               <div class="text-bg" style="margin-top: -2rem;">
+                  <h1> <strong style="margin-right: .5rem;">HARDI</strong><strong class="white"> TOURS AND TRAVEL AGENCY</strong></h1>
+                  <div class="container" style="margin-top: 3rem;">
+                     <div class="main-form">
                         <h3>BOOK TRAVEL</h3>
                         <div class="row">
                            <div class="row_row">
                                  <div class="row_row_row">
-                                    <form action="" method="post">
+                                    <form action="travel_submit" method="post">
                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                          <label >Email</label>
-                                          <input class="form-control" placeholder="Any" type="date" name="Any">
+                                          <input class="form-control" placeholder="Full name" type="text" name="full_name" required>
                                        </div>
                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                          <label>Attractions</label>
+                                          <input class="form-control" placeholder="Phone number" type="text" name="phone_number" required>
+                                       </div>
+                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                                           <select name="attractions" class="form-control">
+                                             <option value="none">Attractions</option>
                                              <option value="">Canopy Walk</option>
                                              <option value="">Chimpanze Trekking</option>
                                              <option value="">Gorilla</option>
@@ -237,64 +239,62 @@
                                           </select>
                                        </div>
                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                          <label >Date</label>
-                                          <input class="form-control" placeholder="Any" type="date" name="Any">
+                                          <input class="form-control" placeholder="Any" type="date" name="date">
                                        </div>
                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                          <label >Number of people</label>
                                           <select name="attractions" class="form-control">
+                                             <option value="none">Number of people</option>
                                              <option value="">1 PERSON</option>
                                              <option value="">2 PEOPLE</option>
                                              <option value="">3 PEOPLE</option>
                                              <option value="">4 - 7 PEOPLE</option>
+                                             <option value="">8+ PEOPLE</option>
                                           </select>
                                        </div>
-                                       <button type="submit" class="book_btn">Book now</button>
+                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                          <input class="form-control" placeholder="Email" type="email" name="email" required>
+                                       </div>
+                                       <button type="submit" name="submit" class="book_btn">Book now</button>
                                     </form>
                                  </div>
                               <div class="row_row_row">
-                                 <form action="" method="post">
-                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                          <label >Email</label>
-                                          <input class="form-control" placeholder="Any" type="date" name="Any">
-                                       </div>
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                          <label >Date</label>
-                                          <input class="form-control" placeholder="Any" type="date" name="Any">
-                                       </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                       <label >Car Rentals</label>
-                                       <select name="car_rentals" class="form-control">
-                                          <option value="none">Types of cars</option>
-                                          <option value="">TOYOTA RAV4</option>
-                                          <option value="">SAFARI CARS</option>
-                                          <option value="">TOYOTA V8 & TXL</option>
-                                          <option value="">BUS</option>
-                                       </select>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                       <label >Duration</label>
-                                       <select name="car_rentals" class="form-control">
-                                          <option value="">1 DAY</option>
-                                          <option value="">2 - 3 DAYS</option>
-                                          <option value="">3 - 5 DAYS</option>
-                                          <option value="">1 WEEK - </option>
-                                       </select>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                       <label >CATEGORY</label>
-                                       <select name="car_rentals" class="form-control">
-                                          <option value="">SELF DRIVING</option>
-                                          <option value="">DEDICATED DRIVER</option>
-                                       </select>
-                                    </div>
-                                    <button type="submit" class="book_btn">Book now</button>
-                                 </form>
+                              <form action="process.php" method="post">
+                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <input class="form-control" placeholder="Full name" type="text" name="full_name" required>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <input class="form-control" placeholder="Phone number" type="text" name="phone_number" required>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <select name="car_rental" class="form-control">
+                                          <option value="none">Car Rentals</option>
+                                          <option value="TOYOTA RAV4">TOYOTA RAV4</option>
+                                          <option value="SAFARI CARS">SAFARI CARS</option>
+                                          <option value="TOYOTA V8 & TXL">TOYOTA V8 & TXL</option>
+                                          <option value="BUS">BUS</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <input class="form-control" placeholder="Duration" type="text" name="duration" required>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <select name="category" class="form-control">
+                                          <option value="none">CATEGORY</option>
+                                          <option value="SELF DRIVING">SELF DRIVING</option>
+                                          <option value="DEDICATED DRIVER">DEDICATED DRIVER</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <input class="form-control" placeholder="Email" type="email" name="email" required>
+                                 </div>
+                                 <button type="submit" name="submit" class="book_btn">Rent now</button>
+                              </form>
+
                                  
                               </div>
                            </div>
                         </div>
-                     </form>
+   </div>
                   </div>
                </div>
             </div>
@@ -317,7 +317,7 @@
                <div class="row">
                   <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                      <div class="about-box">
-                        <p> <span>HARDI Tours and travel agency is a fully regirstered company with the government of Rwanda that deals with tourinsm and transport servises.  It provides an opportunity for people to understand the culture, civilization of the country. We offer recommendations on destinations, accommodations, and activities enhancing the overall travel experience.</span></p>
+                        <p> <span style="color: black; font-size: x-large;">HARDI Tours and travel agency is a fully regirstered company with the government of Rwanda that deals with tourinsm and transport servises.  It provides an opportunity for people to understand the culture, civilization of the country. We offer recommendations on destinations, accommodations, and activities enhancing the overall travel experience.</span></p>
                         <div class="palne-img-area">
                            <img src="images/gorilla.png" alt="images" style="width: 30rem;">
                         </div>
@@ -336,7 +336,7 @@
             <div class="row">
                <div class="col-md-12 ">
                   <div class="titlepage">
-                     <h2>Car Rental</h2>
+                     <h2>Our Offers</h2>
                      <!-- <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>  -->
                   </div>
                </div>
@@ -364,6 +364,7 @@
                  <h4 class="title"><a href="">Chimpanze trekking</a></h4>
                </div>
              </div>
+
              <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                <div class="box">
                   <i><img src="images/G03 (1).jpg" alt="icon" class="image-container" /></i>
@@ -373,7 +374,7 @@
    
              <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
                <div class="box">
-                  <i><img src="images/steptodown.com225425.jpg" alt="icon" class="image-container" /></i>
+                  <i><img src="images/Airport-Transfer-Belgrade.jpg" alt="icon" class="image-container" /></i>
                  <h4 class="title"><a href="">Airport Pickup and Dropoff</a></h4>
                </div>
              </div>
@@ -390,7 +391,7 @@
       </div>
       <!-- end traveling -->
       <!--London -->
-      <div class="London">
+      <!-- <div class="London">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -406,7 +407,7 @@
                <img src="images/file-20230125-22-fk3erh.webp" style="width: 70%; margin: auto;" alt="img"/>
             </div>
          </div>
-      </div>
+      </div> -->
       <!-- end London -->
       <!--Tours -->
       <div class="Tours">
@@ -456,7 +457,7 @@
                         </div>
                         <div class="item">
                            <img class="img-responsive" src="images/the-richard-kandt-museum-still-holds-lessons-to-the-rwandan-society.jpg" alt="#" style="height: 272px; object-fit: contain;"/>
-                           <h3 class="primary">richard Kandt Museum</h3>
+                           <h3 class="primary">Richard Kandt Museum</h3>
                            <p>Windows to the past, housing a wealth of art, history, and culture. They offer a journey through time and human creativity.   </p>
                         </div>
                      </div>

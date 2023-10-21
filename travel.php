@@ -62,7 +62,7 @@
         border-radius: 5px;
         padding: 20px;
         margin: 15px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
 
     .currency {
@@ -155,7 +155,7 @@
                                     <li> <a href="index.php">Home</a> </li>
                                     <li> <a href="car rental.php">Car Rental</a> </li>
                                     <li class="active"><a href="#">Travel</a></li>
-                                    <li><a href="#contact">Services</a></li>
+                                    <li><a href="services.php">Services</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -185,9 +185,9 @@
                             $25/ Person:
                         </h4>
                         <ul class="list-group">
-                            <li class="list-group-item">Airport Pickup</li>
-                            OR
-                            <li class="list-group-item">Airport Dropoff</li>
+                            <li class="list-group-item"><strong style="color: black;">Airport Pickup</strong></li>
+                            <li class="list-group-item"><strong style="color: black;">OR</strong></li> 
+                            <li class="list-group-item"><strong style="color: black;">Airport Dropoff</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -202,11 +202,11 @@
                             <span>$2000 <p> Including:</p></span>
                         </h4>
                         <ul class="list-group">
-                            <li class="list-group-item">Mountain Gorilla Trekking Fees</li>
-                            <li class="list-group-item">Car, Fuel, and Driver Guide</li>
-                            <li class="list-group-item">Lunch and Soft drinks</li>
-                            <li class="list-group-item">Mineral Water</li>
-                            <li class="list-group-item">All Government Taxes</li>
+                            <li class="list-group-item"><strong style="color: black;">Mountain Gorilla Trekking Fees</strong></li>
+                            <li class="list-group-item"><strong style="color: black;">Car, Fuel, and Driver Guide</strong></li>
+                            <li class="list-group-item"><strong style="color: black;">Lunch and Soft drinks</strong></li>
+                            <li class="list-group-item"><strong style="color: black;">Mineral Water</strong></li>
+                            <li class="list-group-item"><strong style="color: black;">All Government Taxes</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -221,19 +221,19 @@
                             PRICES:
                         </h4>
                         <ul class="list-group">
-                            <li class="list-group-item">1 Person: USD 450</li>
-                            <li class="list-group-item">2 People: USD 350 / Person</li>
-                            <li class="list-group-item">3 People: USD 300 / Person</li>
-                            <li class="list-group-item">4-7 People: USD 250 / Person</li>
+                            <li class="list-group-item">1 Person: <strong style="color: black;">USD 450</strong></li>
+                            <li class="list-group-item">2 People: <strong style="color: black;">USD 350 / Person</strong></li>
+                            <li class="list-group-item">3 People: <strong style="color: black;">USD 300 / Person</strong></li>
+                            <li class="list-group-item">4-7 People: <strong style="color: black;">USD 250 / Person</strong></li>
                         </ul>
                         <h4 class="card-title">
                             INCLUDING:
                         </h4>
                         <ul class="list-group">
-                            <li class="list-group-item">Safari car 4WD open roof</li>
-                            <li class="list-group-item">Entrance Fees and Taxes</li>
-                            <li class="list-group-item">Professional guide</li>
-                            <li class="list-group-item">Picnic lunch and drinks</li>
+                            <li class="list-group-item">Safari car 4WD open roof</strong></li>
+                            <li class="list-group-item">Entrance Fees and Taxes</strong></li>
+                            <li class="list-group-item">Professional guide</strong></li>
+                            <li class="list-group-item">Picnic lunch and drinks</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -248,20 +248,20 @@
                             PRICES:
                         </h4>
                         <ul class="list-group">
-                            <li class="list-group-item">1 Person: USD 100</li>
-                            <li class="list-group-item">2 People: USD 150</li>
-                            <li class="list-group-item">3 People: USD 200</li>
+                            <li class="list-group-item">1 Person: <strong style="color: black;">USD 100</strong></li>
+                            <li class="list-group-item">2 People: <strong style="color: black;">USD 150</strong></li>
+                            <li class="list-group-item">3 People: <strong style="color: black;">USD 200</strong></li>
                         </ul>
                         <h4 class="card-title">
                             KEY LANDMARKS:
                         </h4>
                         <ul class="list-group">
-                            <li class="list-group-item">Kigali Genocide Memorial</li>
-                            <li class="list-group-item">Museums and Galleries</li>
-                            <li class="list-group-item">Local and Crafts Markets</li>
-                            <li class="list-group-item">Shopping Malls</li>
-                            <li class="list-group-item">Old City and New City</li>
-                            <li class="list-group-item">Mount Kigali, etc ...</li>
+                            <li class="list-group-item">Kigali Genocide Memorial</strong></li>
+                            <li class="list-group-item">Museums and Galleries</strong></li>
+                            <li class="list-group-item">Local and Crafts Markets</strong></li>
+                            <li class="list-group-item">Shopping Malls</strong></li>
+                            <li class="list-group-item">Old City and New City</strong></li>
+                            <li class="list-group-item">Mount Kigali, etc ...</strong></li>
                         </ul>
                     </div>
                 </div>

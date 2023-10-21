@@ -1641,7 +1641,7 @@ input[type="radio"] .styled:checked+label::after {
      margin-top: 6%;
 }
 .banner-main .text-bg h1 {
-     font-size: 90px;
+     font-size: 50px;
      line-height: 108px;
      text-transform: uppercase;
      color: #FFBF00;
