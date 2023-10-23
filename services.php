@@ -20,19 +20,30 @@
     .li_active {
         color: #FFBF00;
     }
-    .menu-area-main li a{
+    #service_navigation li{
         background: transparent;
         border: 0px solid #000;
         color: #000;
         padding: 10px 25px 6px 25px;
-        float: left;
         font-size: 20px;
         font-weight: bold;
         border-radius: .5rem;
-        margin: 15px 10px 60px 10px;
+        margin: 5px 5px 10px 5px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
-
+    #service_navigation li:hover{
+      background-color: #f8f8f8;
+    }
+    #service_navigation .filter-active{
+      background: #cfcfcf;
+      color: #000;
+      border: none;
+    }
+    #service_navigation .filter-active:hover{
+      background: #cfcfcf;
+      color: #000;
+      border: none;
+    }
 </style>
 <link rel="stylesheet" href="./css/services.css">
     <body class="main-layout">
@@ -87,11 +98,11 @@
             </div>
             <div class="nav">
                 <nav class="cool-navigation">
-                    <ul>
-                        <li><a id="lists" href="" class="safari">Safari Planning</a></li>
-                        <li><a id="lists" href="" class="gorilla">Gorilla Trekking</a></li>
-                        <li><a id="lists" href="" class="city">Kigali City Tour</a></li>
-                        <li><a id="lists" href="" class="hotel">Hotel Reservation</a></li>
+                    <ul id="service_navigation">
+                        <li class="safari filter-active">Safari Planning</li>
+                        <li class="gorilla">Gorilla Trekking</li>
+                        <li class="city">Kigali City Tour</li>
+                        <li class="hotel">Hotel Reservation</li>
                     </ul>
                 </nav>
                 <div class="body_content">
@@ -290,7 +301,6 @@
             const planning = document.querySelectorAll(".planning");
             const lists = document.querySelectorAll(".lists");
             
-            safariLink.style.color = "#FFBF00";
             gorillaDiv.style.display = "none";
             cityDiv.style.display = "none";
             hotelDiv.style.display = "none";
@@ -302,7 +312,10 @@
                 gorillaLink.style.color = "#000"
                 cityLink.style.color = "#000"
                 hotelLink.style.color = "#000"
-                safariLink.style.color = "#FFBF00";
+                safariLink.classList.remove("filter-active");
+                gorillaLink.classList.remove("filter-active");
+                cityLink.classList.remove("filter-active");
+                hotelLink.classList.remove("filter-active");
                 safariDiv.style.display = "block";
                 gorillaDiv.style.display = "none";
                 cityDiv.style.display = "none";
@@ -315,7 +328,10 @@
                 gorillaLink.style.color = "#000"
                 cityLink.style.color = "#000"
                 hotelLink.style.color = "#000"
-                gorillaLink.style.color = "#FFBF00";
+                safariLink.classList.remove("filter-active");
+                gorillaLink.classList.add("filter-active");
+                cityLink.classList.remove("filter-active");
+                hotelLink.classList.remove("filter-active");
                 safariDiv.style.display = "none";
                 gorillaDiv.style.display = "block";
                 cityDiv.style.display = "none";
@@ -328,7 +344,10 @@
                 gorillaLink.style.color = "#000"
                 cityLink.style.color = "#000"
                 hotelLink.style.color = "#000"
-                cityLink.style.color = "#FFBF00";
+                safariLink.classList.remove("filter-active");
+                gorillaLink.classList.remove("filter-active");
+                cityLink.classList.add("filter-active");
+                hotelLink.classList.remove("filter-active");
                 safariDiv.style.display = "none";
                 gorillaDiv.style.display = "none";
                 cityDiv.style.display = "block";
@@ -337,11 +356,10 @@
             
             hotelLink.addEventListener("click", (e) => {
                 e.preventDefault();
-                safariLink.style.color = "#000"
-                gorillaLink.style.color = "#000"
-                cityLink.style.color = "#000"
-                hotelLink.style.color = "#000"
-                hotelLink.style.color = "#FFBF00";
+                safariLink.classList.remove("filter-active");
+                gorillaLink.classList.remove("filter-active");
+                cityLink.classList.remove("filter-active");
+                hotelLink.classList.add("filter-active");
                 safariDiv.style.display = "none";
                 gorillaDiv.style.display = "none";
                 cityDiv.style.display = "none";

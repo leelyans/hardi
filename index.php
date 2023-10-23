@@ -568,7 +568,7 @@
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                      <div class="Follow">
-                        <h3> Feedback</h3>
+                        <!-- <h3> Feedback</h3> -->
                         <div class="row">
                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                               <input class="Newsletter" placeholder="Name" type="text">
