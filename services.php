@@ -308,11 +308,7 @@
             // Add click event listeners to each link
             safariLink.addEventListener("click", (e) => {
                 e.preventDefault();
-                safariLink.style.color = "#000"
-                gorillaLink.style.color = "#000"
-                cityLink.style.color = "#000"
-                hotelLink.style.color = "#000"
-                safariLink.classList.remove("filter-active");
+                safariLink.classList.add("filter-active");
                 gorillaLink.classList.remove("filter-active");
                 cityLink.classList.remove("filter-active");
                 hotelLink.classList.remove("filter-active");
