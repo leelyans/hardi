@@ -320,10 +320,6 @@
             
             gorillaLink.addEventListener("click", (e) => {
                 e.preventDefault();
-                safariLink.style.color = "#000"
-                gorillaLink.style.color = "#000"
-                cityLink.style.color = "#000"
-                hotelLink.style.color = "#000"
                 safariLink.classList.remove("filter-active");
                 gorillaLink.classList.add("filter-active");
                 cityLink.classList.remove("filter-active");
@@ -336,10 +332,6 @@
             
             cityLink.addEventListener("click", (e) => {
                 e.preventDefault();
-                safariLink.style.color = "#000"
-                gorillaLink.style.color = "#000"
-                cityLink.style.color = "#000"
-                hotelLink.style.color = "#000"
                 safariLink.classList.remove("filter-active");
                 gorillaLink.classList.remove("filter-active");
                 cityLink.classList.add("filter-active");
