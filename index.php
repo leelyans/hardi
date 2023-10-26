@@ -19,7 +19,7 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/final logo.png" type="image/gif" />
+      <link rel="icon" href="images/logo2.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -151,6 +151,7 @@
       .banner-main{
          margin-top: 7rem;
       }
+
    </style>
    <!-- body -->
    <body class="main-layout">
@@ -162,14 +163,14 @@
       <!-- header -->
       <header>
          <!-- header inner -->
-         <div class="header">
+         <div class="header" style="height: 90px;">
             <div class="header_white_section">
                <div class="container-fluid">
                   <div class="row">
                      <div class="col-md-12">
                         <div class="header_information">
                            <ul>
-                              <li><img src="images/1.png" alt="#"/> Kigali Rwanda</li>
+                              <li><img src="images/1.png" alt="#"/> Kigali-Rwanda</li>
                               <li><img src="images/2.png" alt="#"/> +250  789 288 770</li>
                               <li><img src="images/3.png" alt="#"/> harditoursandtravelagency@gmail.com</li>
                            </ul>
@@ -207,98 +208,8 @@
          <!-- end header inner -->
       </header>
       <!-- end header -->
-      <section >
-         <div class="banner-main">
-            <img src="images/rwanda-lake-kivu-1.jpg" style="width: 100%; " alt="#"/>
-            <div class="container">
-               <div class="text-bg" style="margin-top: -2rem;">
-                  <h1> <strong style="margin-right: .5rem;">HARDI</strong><strong class="white"> TOURS AND TRAVEL AGENCY</strong></h1>
-                  <div class="container" style="margin-top: 3rem;">
-                     <div class="main-form">
-                        <h3>BOOK TRAVEL</h3>
-                        <div class="row">
-                           <div class="row_row">
-                                 <div class="row_row_row">
-                                    <form action="travel_submit" method="post">
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                          <input class="form-control" placeholder="Full name" type="text" name="full_name" required>
-                                       </div>
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                          <input class="form-control" placeholder="Phone number" type="text" name="phone_number" required>
-                                       </div>
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                          <select name="attractions" class="form-control">
-                                             <option value="none">Attractions</option>
-                                             <option value="">Canopy Walk</option>
-                                             <option value="">Chimpanze Trekking</option>
-                                             <option value="">Gorilla</option>
-                                             <option value="">Wild Life</option>
-                                             <option value="">Water Fall</option>
-                                             <option value="">Country Lakes</option>
-                                             <option value="">City Tour</option>
-                                          </select>
-                                       </div>
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                          <input class="form-control" placeholder="Any" type="date" name="date">
-                                       </div>
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                          <select name="attractions" class="form-control">
-                                             <option value="none">Number of people</option>
-                                             <option value="">1 PERSON</option>
-                                             <option value="">2 PEOPLE</option>
-                                             <option value="">3 PEOPLE</option>
-                                             <option value="">4 - 7 PEOPLE</option>
-                                             <option value="">8+ PEOPLE</option>
-                                          </select>
-                                       </div>
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                          <input class="form-control" placeholder="Email" type="email" name="email" required>
-                                       </div>
-                                       <button type="submit" name="submit" class="book_btn">Book now</button>
-                                    </form>
-                                 </div>
-                              <div class="row_row_row">
-                              <form action="process.php" method="post">
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <input class="form-control" placeholder="Full name" type="text" name="full_name" required>
-                                 </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <input class="form-control" placeholder="Phone number" type="text" name="phone_number" required>
-                                 </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <select name="car_rental" class="form-control">
-                                          <option value="none">Car Rentals</option>
-                                          <option value="TOYOTA RAV4">TOYOTA RAV4</option>
-                                          <option value="SAFARI CARS">SAFARI CARS</option>
-                                          <option value="TOYOTA V8 & TXL">TOYOTA V8 & TXL</option>
-                                          <option value="BUS">BUS</option>
-                                    </select>
-                                 </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <input class="form-control" placeholder="Duration" type="text" name="duration" required>
-                                 </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <select name="category" class="form-control">
-                                          <option value="none">CATEGORY</option>
-                                          <option value="SELF DRIVING">SELF DRIVING</option>
-                                          <option value="DEDICATED DRIVER">DEDICATED DRIVER</option>
-                                    </select>
-                                 </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <input class="form-control" placeholder="Email" type="email" name="email" required>
-                                 </div>
-                                 <button type="submit" name="submit" class="book_btn">Rent now</button>
-                              </form>
-
-                                 
-                              </div>
-                           </div>
-                        </div>
-   </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+      <section class="banner-main">
+        
       </section>
       <!-- about -->
       <div id="about" class="about">
@@ -306,7 +217,7 @@
             <div class="row">
                <div class="col-md-12 ">
                   <div class="titlepage">
-                     <h2>About HARDI tours</h2>
+                     <h2>About HARDI T&T</h2>
                      <!-- <span> fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span> -->
                   </div>
                </div>
@@ -317,7 +228,7 @@
                <div class="row">
                   <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                      <div class="about-box">
-                        <p> <span style="color: black; font-size: x-large;">HARDI Tours and travel agency is a fully regirstered company with the government of Rwanda that deals with tourinsm and transport servises.  It provides an opportunity for people to understand the culture, civilization of the country. We offer recommendations on destinations, accommodations, and activities enhancing the overall travel experience.</span></p>
+                        <p> <span style="color: black; font-size: 20px;">HARDI Tours and travel agency is a fully regirstered company with the government of Rwanda that deals with tourinsm and transport servises.  It provides an opportunity for people to understand the culture, civilization of the country. We offer recommendations on destinations, accommodations, and activities enhancing the overall travel experience.</span></p>
                         <div class="palne-img-area">
                            <img src="images/gorilla.png" alt="images" style="width: 30rem;">
                         </div>
@@ -336,9 +247,10 @@
             <div class="row">
                <div class="col-md-12 ">
                   <div class="titlepage">
-                     <h2>Our Offers</h2>
-                     <!-- <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>  -->
+                      <h2>Our Services</h2>
+                      <span>Explore our wide range of services that cater to your travel desires and aspirations. We take pride in creating remarkable journeys that will leave you with unforgettable memories.</span>
                   </div>
+
                </div>
             </div><section id="services" class="section-bg">
          <div class="container">
@@ -497,7 +409,7 @@
             <div class="row">
                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                   <div class="blog-box">
-                     <figure><img src="images/download (6).jpg" style="height: 18rem;" alt="#"/>
+                     <figure><img src="images/room.jpg" style="height: 18rem;" alt="#"/>
                         <!-- <span>4 Feb 2019</span> -->
                      </figure>
                      <div class="travel">
@@ -526,32 +438,29 @@
             </div>
          </div>
       </div>
+   </section>
       <!-- end our blog -->
       <!-- footer -->
       <footer>
          <div id="contact" class="footer">
             <div class="container">
                <div class="row pdn-top-30">
-                  <!-- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                   <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                      <ul class="location_icon">
                         <li> <a href="#"><img src="icon/facebook.png"></a></li>
                         <li> <a href="#"><img src="icon/Twitter.png"></a></li>
                         <li> <a href="#"><img src="icon/linkedin.png"></a></li>
-                        <li> <a href="#"><img src="icon/instagram.png"></a></li>
+                        <li> <a href="https://www.instagram.com/hardi.tours_and_travel_agency/"><img src="icon/instagram.png"></a></li>
                      </ul>
-                  </div> -->
+                  </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                      <div class="Follow">
                         <h3>CONTACT US</h3>
                         <span>KIGALI - RWANDA<br>
                         +250 789 288 770</span><br>
-                        <ul class="location_icon">
-                           <li> <a href="#"><img src="icon/facebook.png"></a></li>
-                           <li> <a href="#"><img src="icon/Twitter.png"></a></li>
-                           <li> <a href="https://www.instagram.com/hardi.tours_and_travel_agency/"><img src="icon/instagram (1).png"></a></li>
-                        </ul>
+                        
                         <br>
-                        <img src="images/rwanda-development-board.jpg" alt="">
+                        <img src="images/rdb.png" alt="">
                      </div>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
@@ -568,7 +477,7 @@
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                      <div class="Follow">
-                        <!-- <h3> Feedback</h3> -->
+                        <h3> Contact US</h3>
                         <div class="row">
                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                               <input class="Newsletter" placeholder="Name" type="text">
@@ -580,7 +489,7 @@
                               <textarea class="textarea" placeholder="Comment" type="text"></textarea>
                            </div>
                         </div>
-                        <button class="Subscribe">Submit</button>
+                        <button class="Subscribe">Send</button>
                      </div>
                   </div>
                </div>
@@ -625,6 +534,47 @@
            })
          })
       </script>
+      <script>
+    // Slideshow images and captions
+    var slideshowImages = [
+        "images/ingagi2.jpg",        
+         "images/kivu.jpg",
+          "images/kivu3.jpg",
+    ];
+    var captions = [
+        "Caption 1",
+        "Caption 2",
+        "Caption 3",
+    ];
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var banner = document.querySelector(".banner-main");
+        banner.innerHTML = "";  // Clear the previous content
+
+        var img = document.createElement("img");
+        img.src = slideshowImages[slideIndex];
+        img.style.width = "100%";
+        banner.appendChild(img);
+
+        var caption = document.createElement("div");
+        caption.className = "text-bg";
+        var h1 = document.createElement("h1");
+        h1.innerHTML = "<strong style='margin-right: .5rem;'>HARDI</strong><strong class='white'>" + captions[slideIndex] + "</strong>";
+        caption.appendChild(h1);
+        banner.appendChild(caption);
+
+        slideIndex++;
+        if (slideIndex >= slideshowImages.length) {
+            slideIndex = 0;
+        }
+
+        setTimeout(showSlides, 8000); // Change slide every 5 seconds
+    }
+</script>
+
      
    </body>
 </html>

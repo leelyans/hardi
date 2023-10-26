@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" href="images/final logo.png" type="image/gif" />
+    <link rel="icon" href="images/logo2.png" type="image/gif" />
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -122,7 +122,7 @@
 </style>
 <body class="main-layout">
 <header>
-    <div class="header">
+    <div class="header" style="height: 90px;">
         <div class="header_white_section">
             <div class="container-fluid">
                 <div class="row">
@@ -269,6 +269,68 @@
         </div>
     </div>
 </section>
+ <!-- footer -->
+      <footer>
+         <div id="contact" class="footer">
+            <div class="container">
+               <div class="row pdn-top-30">
+                   <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                     <ul class="location_icon">
+                        <li> <a href="#"><img src="icon/facebook.png"></a></li>
+                        <li> <a href="#"><img src="icon/Twitter.png"></a></li>
+                        <li> <a href="#"><img src="icon/linkedin.png"></a></li>
+                        <li> <a href="https://www.instagram.com/hardi.tours_and_travel_agency/"><img src="icon/instagram.png"></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                     <div class="Follow">
+                        <h3>CONTACT US</h3>
+                        <span>KIGALI - RWANDA<br>
+                        +250 789 288 770</span><br>
+                        
+                        <br>
+                        <img src="images/rdb.png" alt="">
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                     <div class="Follow">
+                        <h3>ADDITIONAL LINKS</h3>
+                        <ul class="link">
+                           <li> <a href="#">About us</a></li>
+                           <li> <a href="#">Terms and conditions</a></li>
+                           <li> <a href="#"> Privacy policy</a></li>
+                           <li> <a href="#">News</a></li>
+                           <li> <a href="#"> Contact us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                     <div class="Follow">
+                        <h3> Contact US</h3>
+                        <div class="row">
+                           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                              <input class="Newsletter" placeholder="Name" type="text">
+                           </div>
+                           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                              <input class="Newsletter" placeholder="Email" type="text">
+                           </div>
+                           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                              <textarea class="textarea" placeholder="Comment" type="text"></textarea>
+                           </div>
+                        </div>
+                        <button class="Subscribe">Send</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="copyright">
+                  <div class="container">
+                     <!-- <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
 
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
