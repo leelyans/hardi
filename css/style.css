@@ -1674,6 +1674,8 @@ input[type="radio"] .styled:checked+label::after {
 .main-form {
      background: #ffffffe8;
      padding: 35px 35px;
+     display: flex;
+     justify-content: space-between;
 }
 .form-control {
      border: #c2c4c4 solid 1px;

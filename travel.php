@@ -62,12 +62,28 @@
         border-radius: 5px;
         padding: 20px;
         margin: 15px;
+        display: flex;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* .card a{
+        margin: 1rem auto auto auto;
+    } */
+    .card a button{
+        width: 100%;
+        margin: 1rem auto auto auto;
+        background-color: #1e2730;
+        color:#e9af00;
+        font-size: large;
+        border-radius: .5rem;
+        padding: .5rem 2rem .5rem 2rem;
+
     }
 
     .currency {
         font-size: 18px;
-        color: #000;
+        /* color: #faad19; */
+        color: #fff;
         font-weight: bold;
     }
 
@@ -84,7 +100,7 @@
     .card-title {
         font-size: 20px;
         font-weight: bold;
-        color: #e9af00;
+        color:#e9af00;
         margin: 1.5rem 0 0 .2rem;
     }
 
@@ -109,9 +125,21 @@
         margin-top: 20px;
         transition: background-color 0.3s;
     }
+    .card-header{
+        background-color: #20753b;
+        cursor: pointer;
+    }
+
+    .card-header h3 span:hover{
+        color: #e9af00;
+    }
 
     .btn:hover {
         background-color: #0056b3;
+    }
+    
+    .display_none{
+        display: none;
     }
 
     @media (max-width: 768px) {
@@ -153,9 +181,10 @@
                             <nav class="main-menu">
                                 <ul class="menu-area-main">
                                     <li> <a href="index.php">Home</a> </li>
-                                    <li> <a href="car rental.php">Car Rental</a> </li>
-                                    <li class="active"><a href="#">Travel</a></li>
-                                    <li><a href="services.php">Services</a></li>
+                                    <li> <a href="car rental.php">Travel Services</a> </li>
+                                    <li class="active"><a href="#">Tour Packages</a></li>
+                                    <li><a href="about.php">About</a></li>
+                                    <li><a href="services.php">Destinations</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -177,47 +206,60 @@
         <div class="row">
             <div class="col-xs-12 col-lg-6">
                 <div class="card">
-                    <div class="card-header">
-                        <h3><span class="currency">AIRPORT SHUTTLE</span></h3>
+                    <div class="card_image">
+                        <img src="./images/Airport-Transfer-Belgrade.jpg" alt="">
                     </div>
-                    <div class="card-block">
-                        <h4 class="card-title">
+                    <div class="card-header">
+                        <h3><span class="currency">AIRPORT SHUTTLE</span> <img src="images/caret-down (1).png" alt="" style="width: 18px; margin: auto auto auto .6rem;"></h3>
+                    </div>
+                    <div class="card-block display_none">
+                        <!-- <h4 class="card-title">
                             $25/ Person:
+                        </h4> -->
+                        <h4 class="card-title">
+                            <span>INCLUDED:</span>
                         </h4>
                         <ul class="list-group">
-                            <li class="list-group-item"><strong style="color: black;">Airport Pickup</strong></li>
-                            <li class="list-group-item"><strong style="color: black;">OR</strong></li> 
-                            <li class="list-group-item"><strong style="color: black;">Airport Dropoff</strong></li>
+                            <li class="list-group-item"><strong style="color: #777;">Airport Pickup</strong></li>
+                            <li class="list-group-item"><strong style="color: #777;">OR</strong></li> 
+                            <li class="list-group-item"><strong style="color: #777;">Airport Dropoff</strong></li>
                         </ul>
                     </div>
+                    <a href="./book.php"><button class="book_btn">Book Now</button></a>
                 </div>
             </div>
             <div class="col-xs-12 col-lg-6">
                 <div class="card">
-                    <div class="card-header">
-                        <h3><span class="currency">GORILLA TREKKING</span></h3>
+                    <div class="card_image">
+                        <img src="./images/ingagi4.webp" alt="">
                     </div>
-                    <div class="card-block">
+                    <div class="card-header">
+                        <h3><span class="currency">GORILLA TREKKING</span><img src="images/caret-down (1).png" alt="" style="width: 18px; margin: auto auto auto .6rem;"></h3>
+                    </div>
+                    <div class="card-block display_none">
                         <h4 class="card-title">
-                            <span>$2000 <p> Including:</p></span>
+                            <span>INCLUDED:</span>
                         </h4>
                         <ul class="list-group">
-                            <li class="list-group-item"><strong style="color: black;">Mountain Gorilla Trekking Fees</strong></li>
-                            <li class="list-group-item"><strong style="color: black;">Car, Fuel, and Driver Guide</strong></li>
-                            <li class="list-group-item"><strong style="color: black;">Lunch and Soft drinks</strong></li>
-                            <li class="list-group-item"><strong style="color: black;">Mineral Water</strong></li>
-                            <li class="list-group-item"><strong style="color: black;">All Government Taxes</strong></li>
+                            <li class="list-group-item"><strong style="color: #777;">Mountain Gorilla Trekking Fees</strong></li>
+                            <li class="list-group-item"><strong style="color: #777;">Car, Fuel, and Driver Guide</strong></li>
+                            <li class="list-group-item"><strong style="color: #777;">Lunch and Soft drinks</strong></li>
+                            <li class="list-group-item"><strong style="color: #777;">Mineral Water</strong></li>
+                            <li class="list-group-item"><strong style="color: #777;">All Government Taxes</strong></li>
                         </ul>
                     </div>
+                    <a href="./book.php"><button class="book_btn">Book Now</button></a>
                 </div>
             </div>
             <div class="col-xs-12 col-lg-6">
                 <div class="card">
+                    <div class="card_image">
+                    <img src="./images/Tours-and-travel.jpg" alt=""></div>
                     <div class="card-header">
-                        <h3><span class="currency">AKAGERA NATIONAL PARK</span></h3>
+                        <h3><span class="currency">AKAGERA NATIONAL PARK</span> <img src="images/caret-down (1).png" alt="" style="width: 18px; margin: auto auto auto .6rem;"></h3>
                     </div>
-                    <div class="card-block">
-                        <h4 class="card-title">
+                    <div class="card-block display_none">
+                        <!-- <h4 class="card-title">
                             PRICES:
                         </h4>
                         <ul class="list-group">
@@ -225,9 +267,9 @@
                             <li class="list-group-item">2 People: <strong style="color: black;">USD 350 / Person</strong></li>
                             <li class="list-group-item">3 People: <strong style="color: black;">USD 300 / Person</strong></li>
                             <li class="list-group-item">4-7 People: <strong style="color: black;">USD 250 / Person</strong></li>
-                        </ul>
+                        </ul> -->
                         <h4 class="card-title">
-                            INCLUDING:
+                            INCLUDED:
                         </h4>
                         <ul class="list-group">
                             <li class="list-group-item">Safari car 4WD open roof</strong></li>
@@ -236,22 +278,25 @@
                             <li class="list-group-item">Picnic lunch and drinks</strong></li>
                         </ul>
                     </div>
+                    <a href="./book.php"><button class="book_btn">Book Now</button></a>
                 </div>
             </div>
             <div class="col-xs-12 col-lg-6">
                 <div class="card">
+                    <div class="card_image">
+                    <img src="./images/KCC.jpg" alt=""></div>
                     <div class="card-header">
-                        <h3><span class="currency">KIGALI CITY TOUR</span></h3>
+                        <h3><span class="currency">KIGALI CITY TOUR</span><img src="images/caret-down (1).png" alt="" style="width: 18px; margin: auto auto auto .6rem;"></h3>
                     </div>
-                    <div class="card-block">
-                        <h4 class="card-title">
+                    <div class="card-block display_none">
+                        <!-- <h4 class="card-title">
                             PRICES:
                         </h4>
                         <ul class="list-group">
                             <li class="list-group-item">1 Person: <strong style="color: black;">USD 100</strong></li>
                             <li class="list-group-item">2 People: <strong style="color: black;">USD 150</strong></li>
                             <li class="list-group-item">3 People: <strong style="color: black;">USD 200</strong></li>
-                        </ul>
+                        </ul> -->
                         <h4 class="card-title">
                             KEY LANDMARKS:
                         </h4>
@@ -264,6 +309,7 @@
                             <li class="list-group-item">Mount Kigali, etc ...</strong></li>
                         </ul>
                     </div>
+                    <a href="./book.php"><button class="book_btn">Book Now</button></a>
                 </div>
             </div>
         </div>
@@ -341,6 +387,19 @@
 <script src="js/custom.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script>
+    var card_header = document.querySelectorAll(".card-header");
+    var card_block = document.querySelectorAll(".card-block");
+
+    for (let i = 0; i < card_header.length; i++) {
+        card_header[i].addEventListener("click", () => {
+            if (card_block[i].classList.contains("display_none")) {
+                card_block[i].classList.remove("display_none");
+            } else {
+                card_block[i].classList.add("display_none");
+            }
+        });
+    }
+
     $(document).ready(function() {
         var owl = $('.owl-carousel');
         owl.owlCarousel({

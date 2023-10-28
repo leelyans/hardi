@@ -31,6 +31,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <style>
+      body {
+         background-color: #ffffff;
+      }
       .image-container {
          max-width: 100%;
          max-height: 7rem;
@@ -116,15 +119,16 @@
       }
 
       .book_btn{
+         color: #fff;
          background: #000;
-         color: #c0c0c0;
-         width: 62%;
+         /* color: #c0c0c0; */
+         width: 20rem;
          height: 2.7rem;
          float: left;
          font-size: 18px;
          /* font-weight: bold; */
          border-radius: .5rem;
-         margin: 15px 0px 60px 15px;
+         /* margin: 15px 0px 60px 15px; */
       }
       .book_btn:hover{
          color: #FFBF00;
@@ -132,6 +136,7 @@
       .col-md-9{
          width: 100%;
       }
+
       .main-form .row{
          width: 100%;
       }
@@ -139,14 +144,21 @@
          display: flex;
          flex-direction: row;
          width: 100%;
+         justify-content: space-between;
       }
       .row_row_row{
          height: auto;
-         width: 50%;
+         width: fit-content;
+         padding: 2rem 2rem 2rem 2rem;
+         border-radius: .5rem;
+         /* width: 100%; */
+         background-color: #f0f0f0;
+         /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
       }
       .row_row_row select, .row_row_row input{
-         width: 20rem;
+         width: 100%;
          margin-bottom: 1.5rem;
+         border: none;
       }
       .banner-main{
          margin-top: 7rem;
@@ -193,10 +205,11 @@
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main">
-                                 <li class="active"> <a href="#">Home</a> </li>
-                                 <li> <a href="car rental.php">Car Rental</a> </li>
-                                 <li><a href="travel.php">Travel</a></li>
-                                 <li><a href="services.php">Services</a></li>
+                                 <li> <a href="home.php">Home</a> </li>
+                                 <li> <a href="car rental.php">Travel Services</a> </li>
+                                 <li><a href="travel.php">Tour Packages</a></li>
+                                 <li><a href="about.php">About</a></li>
+                                 <li><a href="services.php">Destinations</a></li>
                               </ul>
                            </nav>
                         </div>
@@ -214,13 +227,13 @@
                            <div class="row_row">
                                  <div class="row_row_row">
                                     <form action="travel_submit" method="post">
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                       <div>
                                           <input class="form-control" placeholder="Full name" type="text" name="full_name" required>
                                        </div>
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                       <div>
                                           <input class="form-control" placeholder="Phone number" type="text" name="phone_number" required>
                                        </div>
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                       <div>
                                           <select name="attractions" class="form-control">
                                              <option value="none">Attractions</option>
                                              <option value="">Canopy Walk</option>
@@ -232,10 +245,10 @@
                                              <option value="">City Tour</option>
                                           </select>
                                        </div>
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                       <div>
                                           <input class="form-control" placeholder="Any" type="date" name="date">
                                        </div>
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                       <div>
                                           <select name="attractions" class="form-control">
                                              <option value="none">Number of people</option>
                                              <option value="">1 PERSON</option>
@@ -245,7 +258,7 @@
                                              <option value="">8+ PEOPLE</option>
                                           </select>
                                        </div>
-                                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                       <div>
                                           <input class="form-control" placeholder="Email" type="email" name="email" required>
                                        </div>
                                        <button type="submit" name="submit" class="book_btn">Book now</button>
@@ -253,13 +266,13 @@
                                  </div>
                               <div class="row_row_row">
                               <form action="process.php" method="post">
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                 <div>
                                     <input class="form-control" placeholder="Full name" type="text" name="full_name" required>
                                  </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                 <div>
                                     <input class="form-control" placeholder="Phone number" type="text" name="phone_number" required>
                                  </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                 <div>
                                     <select name="car_rental" class="form-control">
                                           <option value="none">Car Rentals</option>
                                           <option value="TOYOTA RAV4">TOYOTA RAV4</option>
@@ -268,17 +281,17 @@
                                           <option value="BUS">BUS</option>
                                     </select>
                                  </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                 <div>
                                     <input class="form-control" placeholder="Duration" type="text" name="duration" required>
                                  </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                 <div>
                                     <select name="category" class="form-control">
                                           <option value="none">CATEGORY</option>
                                           <option value="SELF DRIVING">SELF DRIVING</option>
                                           <option value="DEDICATED DRIVER">DEDICATED DRIVER</option>
                                     </select>
                                  </div>
-                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                 <div>
                                     <input class="form-control" placeholder="Email" type="email" name="email" required>
                                  </div>
                                  <button type="submit" name="submit" class="book_btn">Rent now</button>

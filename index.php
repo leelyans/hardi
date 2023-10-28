@@ -194,9 +194,10 @@
                            <nav class="main-menu">
                               <ul class="menu-area-main">
                                  <li class="active"> <a href="#">Home</a> </li>
-                                 <li> <a href="car rental.php">Car Rental</a> </li>
-                                 <li><a href="travel.php">Travel</a></li>
-                                 <li><a href="services.php">Services</a></li>
+                                 <li> <a href="car rental.php">Travel Services</a> </li>
+                                 <li><a href="travel.php">Tour Packages</a></li>
+                                 <li><a href="about.php">About</a></li>
+                                 <li><a href="services.php">Destinations</a></li>
                               </ul>
                            </nav>
                         </div>
@@ -542,9 +543,9 @@
           "images/kivu3.jpg",
     ];
     var captions = [
-        "Caption 1",
-        "Caption 2",
-        "Caption 3",
+        "Gorilla Trekking",
+        "Western Adventure",
+        "Lake kivu",
     ];
 
     var slideIndex = 0;
@@ -562,7 +563,8 @@
         var caption = document.createElement("div");
         caption.className = "text-bg";
         var h1 = document.createElement("h1");
-        h1.innerHTML = "<strong style='margin-right: .5rem;'>HARDI</strong><strong class='white'>" + captions[slideIndex] + "</strong>";
+        h1.innerHTML = "<strong style='margin-right: .5rem;'>" + captions[slideIndex].split(" ")[0] + "</strong><strong class='white'>" + captions[slideIndex].split(" ")[1] + "</strong>";
+      //   h1.innerHTML = "<strong class='white'>" + captions[slideIndex] + "</strong>";
         caption.appendChild(h1);
         banner.appendChild(caption);
 
@@ -571,7 +573,7 @@
             slideIndex = 0;
         }
 
-        setTimeout(showSlides, 8000); // Change slide every 5 seconds
+        setTimeout(showSlides, 2000); // Change slide every 5 seconds
     }
 </script>
 

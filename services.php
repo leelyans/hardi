@@ -44,6 +44,15 @@
       color: #000;
       border: none;
     }
+    .readmore{
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        border-radius: .2rem;
+        margin: 1rem 0 0 0;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #1e2730;
+        color: #faad19;
+    }
 </style>
 <link rel="stylesheet" href="./css/services.css">
     <body class="main-layout">
@@ -79,9 +88,10 @@
                                     <nav class="main-menu">
                                         <ul class="menu-area-main">
                                             <li > <a href="index.php">Home</a> </li>
-                                            <li> <a href="car rental.php">Car Rental</a> </li>
-                                            <li><a href="travel.php">Travel</a></li>
-                                            <li class="active"><a href="">Services</a></li>
+                                            <li> <a href="car rental.php">Travel Services</a> </li>
+                                            <li><a href="travel.php">Tour Packages</a></li>
+                                            <li><a href="about.php">About</a></li>
+                                            <li class="active"><a href="">Destinations</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -110,7 +120,8 @@
                         <div class="safari_card">
                             <div class="card_title">
                                 <p class="c_title">Nyungwe National Park</p>
-                                <p class="card_desc">Home of various creatures, animals and a preservation of historical sites.</p>
+                                <p class="card_desc">Nyungwe National Park is a pristine and biodiverse protected area located in Rwanda, renowned for its lush rainforests, diverse wildlife, and remarkable primate species.</p>
+                                <a href="nyungwe.php"><button class="readmore">Read More</button></a>
                             </div>
                             <div>
                                 <img src="images/nyungwe.jpeg" alt="">
@@ -123,14 +134,16 @@
                             </div>
                             <div class="card_title">
                                 <p class="c_title">Lake kivu</p>
-                                <p class="card_desc">Lakes plays a big role in agriculture, transportation not undervaluing tourism and recreation</p>
+                                <p class="card_desc">Lake Kivu is one of the African Great Lakes, situated between Rwanda and the Democratic Republic of Congo known for its scenic beauty, and the potential for energy production due to its methane.</p>
+                                <a href="kivu.php"><button class="readmore">Read More</button></a>
                             </div>
                         </div>
                         
                         <div class="safari_card">
                             <div class="card_title">
                                 <p class="c_title">Akagera National Park</p>
-                                <p class="card_desc">National parks are nature's treasures, preserving and celebrating the world's most spectacular landscapes and wildlife for everyone to enjoy and cherish.</p>
+                                <p class="card_desc">Akagera National Park is a picturesque wildlife reserve in Rwanda with stunning savannas, and wetlands. It offers a diverse range of wildlife, making it a popular destination for safaris and outdoor enthusiasts.</p>
+                                <a href="akagera.php"><button class="readmore">Read More</button></a>
                             </div>
                             <div>
                                 <img src="images/Tours-and-travel.jpg" alt="">
@@ -143,14 +156,16 @@
                             </div>
                             <div class="card_title">
                                 <p class="c_title">King's Palace Nyanza</p>
-                                <p class="card_desc">The roots and base where the history of Rwanda relies on, that impact education</p>
+                                <p class="card_desc"> It was once a royal residence into the traditional Rwandan history. Today it serves as a museum, providing visitors with insights into the country's rich royal heritage and history.</p>
+                                <a href="palace.php"><button class="readmore">Read More</button></a>
                             </div>
                         </div>
                         
                         <div class="safari_card">
                             <div class="card_title">
                                 <p class="c_title">Richard Kandt's Museum</p>
-                                <p class="card_desc">The roots and base where the history of Rwanda relies on, that impact education</p>
+                                <p class="card_desc">A historical and cultural museum named after Dr. Richard Kandt, a German colonial officer who played a significant role in Rwanda's history. </p>
+                                <a href="kandt.php"><button class="readmore">Read More</button></a>
                             </div>
                             <div>
                                 <img src="images/the-richard-kandt-museum-still-holds-lessons-to-the-rwandan-society.jpg" alt="">
@@ -163,6 +178,7 @@
                             <div class="card_title">
                                 <!-- <p class="c_title">Nyungwe National Park</p> -->
                                 <p class="card_desc">Gorillas are large, peaceful primates found in African forests. They're known for their strength and familial bonds, making them captivating subjects for wildlife enthusiasts.</p>
+                                <a href=""><button class="readmore">Read More</button></a>
                             </div>
                             <div>
                                 <img src="images/gorilla-trekking-starting-from-ruhija-sector-in-bwindi-national-park.jpg" alt="">
@@ -176,6 +192,7 @@
                             <div class="card_title">
                                 <!-- <p class="c_title">Lake kivu</p> -->
                                 <p class="card_desc">Gorillas are large, peaceful primates found in African forests. They're known for their strength and familial bonds, making them captivating subjects for wildlife enthusiasts.</p>
+                                <a href=""><button class="readmore">Read More</button></a>
                             </div>
                         </div>
                         
@@ -183,6 +200,7 @@
                             <div class="card_title">
                                 <!-- <p class="c_title">King's Palace Nyanza</p> -->
                                 <p class="card_desc">Gorillas are large, peaceful primates found in African forests. They're known for their strength and familial bonds, making them captivating subjects for wildlife enthusiasts.</p>
+                                <a href=""><button class="readmore">Read More</button></a>
                             </div>
                             <div>
                                 <img src="images/landing_about.jpg" alt="">
@@ -196,6 +214,7 @@
                             <div class="card_title">
                                 <!-- <p class="c_title">Richard Kandt's Museum</p> -->
                                 <p class="card_desc">Gorillas are large, peaceful primates found in African forests. They're known for their strength and familial bonds, making them captivating subjects for wildlife enthusiasts.</p>
+                                <a href=""><button class="readmore">Read More</button></a>
                             </div>
                         </div>
                     </div>
@@ -205,6 +224,7 @@
                             <div class="card_title">
                                 <p class="c_title">Kigali Genocide Memorial</p>
                                 <p class="card_desc">You'll be able to discover culture, geography and sociology. Satisfy your curiosity and get new tastes. Visit most of the modern places and discover new cool places</p>
+                                <a href="genocide_memorial.php"><button class="readmore">Read More</button></a>
                             </div>
                             <div>
                                 <img src="images/Visit-Rwanda-Kigali-Genocide-Museum-Family-Photographs-1920x1280.jpg" alt="">
@@ -218,6 +238,7 @@
                             <div class="card_title">
                                 <p class="c_title">Kandt House Museum</p>
                                 <p class="card_desc">You'll be able to discover culture, geography and sociology. Satisfy your curiosity and get new tastes. Visit most of the modern places and discover new cool places</p>
+                                <a href="kandt.php"><button class="readmore">Read More</button></a>
                             </div>
                         </div>
                         
@@ -225,6 +246,7 @@
                             <div class="card_title">
                                 <p class="c_title">Kigali Convetion Centre</p>
                                 <p class="card_desc">You'll be able to discover culture, geography and sociology. Satisfy your curiosity and get new tastes. Visit most of the modern places and discover new cool places</p>
+                                <a href="kcc.php"><button class="readmore">Read More</button></a>
                             </div>
                             <div>
                                 <img src="images/220928144359-kigali-convention-centre-file-042718.jpg" alt="">
@@ -238,6 +260,7 @@
                             <div class="card_title">
                                 <p class="c_title">Kigali Mountains</p>
                                 <p class="card_desc">You'll be able to discover culture, geography and sociology. Satisfy your curiosity and get new tastes. Visit most of the modern places and discover new cool places</p>
+                                <a href=""><button class="readmore">Read More</button></a>
                             </div>
                         </div>
                     </div>
@@ -247,6 +270,7 @@
                             <div class="card_title">
                                 <p class="c_title">Radisson Blu Hotel & Convention Centre</p>
                                 <p class="card_desc">You'll be able to discover culture, geography and sociology. Satisfy your curiosity and get new tastes. Visit most of the modern places and discover new cool places</p>
+                                <a href="kcc.php"><button class="readmore">Read More</button></a>
                             </div>
                             <div>
                                 <img src="images/KCC.jpg" alt="">
@@ -260,6 +284,7 @@
                             <div class="card_title">
                                 <p class="c_title">Hotel Mille Collins</p>
                                 <p class="card_desc">You'll be able to discover culture, geography and sociology. Satisfy your curiosity and get new tastes. Visit most of the modern places and discover new cool places</p>
+                                <a href="mille_collins.php"><button class="readmore">Read More</button></a>
                             </div>
                         </div>
                         
@@ -267,6 +292,7 @@
                             <div class="card_title">
                                 <p class="c_title">Ubumwe Grande Hotel</p>
                                 <p class="card_desc">You'll be able to discover culture, geography and sociology. Satisfy your curiosity and get new tastes. Visit most of the modern places and discover new cool places</p>
+                                <a href="ubumwe.php"><button class="readmore">Read More</button></a>
                             </div>
                             <div>
                                 <img src="images/arton199.jpg" alt="">
@@ -280,6 +306,7 @@
                             <div class="card_title">
                                 <p class="c_title">Kigali Marriott Hotel</p>
                                 <p class="card_desc">You'll be able to discover culture, geography and sociology. Satisfy your curiosity and get new tastes. Visit most of the modern places and discover new cool places</p>
+                                <a href="marriot.php"><button class="readmore">Read More</button></a>
                             </div>
                         </div>
                     </div>

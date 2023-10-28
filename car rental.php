@@ -27,9 +27,8 @@
       margin-top: 15rem;
     } */
     .section-header {
-        text-align: center;
-        margin-top: 20%;
-        margin-bottom: 2rem;
+      text-align: center;
+      margin: 2rem 0 2rem 0;
     }
 
     .section-header h3 {
@@ -39,31 +38,34 @@
     }
 
     .section-header p {
-        font-size: 16px;
-        color: #777;
+      font-size: 16px;
+      color: #777;
     }
 
     .list-group-item {
-        margin: 0;
-        padding: 0;
-        border: none;
+      margin: 0;
+      padding: 0;
+      border: none;
     }
 
     .row {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0 -15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 -15px;
     }
 
+    .body_content{
+      margin-top: 10%;
+    }
     .card {
-        background-color: #fff;
-        border: 1px solid #e0e0e0;
-        border-radius: 5px;
-        padding: 20px;
-        margin: 15px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .currency {
@@ -109,6 +111,17 @@
       cursor: pointer;
     }
 
+    .blog-box h3{
+      margin: 1rem 0 0 0;
+      font-size: small;
+
+    }
+
+    .blog-box p{
+      font-size: small;
+      margin: 0 2rem 4rem 0;
+      text-align: justify;
+    }
     #portfolio-flters li{
       background: transparent;
       border: 0px solid #000;
@@ -134,7 +147,6 @@
       color: #000;
       background: #cfcfcf;
     }
-
 </style>
 <body class="main-layout">
 <header>
@@ -169,9 +181,10 @@
                             <nav class="main-menu">
                                 <ul class="menu-area-main">
                                     <li > <a href="index.php">Home</a> </li>
-                                    <li class="active"> <a href="#">Car Rental</a> </li>
-                                    <li><a href="travel.php">Travel</a></li>
-                                    <li><a href="services.php">Services</a></li>
+                                    <li class="active"> <a href="#">Travel Services</a> </li>
+                                    <li><a href="travel.php">Tour Packages</a></li>
+                                    <li><a href="about.php">About</a></li>
+                                    <li><a href="services.php">Destinations</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -181,7 +194,125 @@
         </div>
     </div>
 </header>
-<div class="container">
+<div class="container body_content">
+    <div class="container">
+      <div class="row">
+        <header class="section-header">
+          <h3 class="section-title">Hotel Reservations</h3>
+        </header>
+      </div>
+      <div class="row" style="justify-content: normal;">
+          <div class="col-md-4">
+            <div class="blog-box">
+                <img src="images/hotel 1.webp" alt="#"/>
+                  <!-- <span>4 Feb 2019</span> -->
+                <div class="travel">
+                  <!-- <span>Post  By :  Travel  Agency</span> 
+                  <p><strong class="Comment"> 06 </strong>  Comment</p>
+                  <p><strong class="like">05 </strong>Like</p> -->
+                </div>
+                <h3 style="font-weight: bold; font-size: 25px;">Four Points</h3>
+                <p>We help those who might need accomodation while enjoying the their travel adventures, which would lead to more than 1 day</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog-box"><img src="images/hotel 2.webp"  alt="#"/>
+                  <!-- <span>10 Feb 2019</span> -->
+                <div class="travel">
+                  <!-- <span>Post  By :  Travel  Agency</span> 
+                  <p><strong class="Comment"> 06 </strong>  Comment</p>
+                  <p><strong class="like">05 </strong>Like</p> -->
+                </div>
+                <h3 style="font-weight: bold; font-size: 25px;">Radisson Blu Hotel</h3>
+                <p>Ideally located 5 km (3 mi) from the city center and Kigali International Airport, the stylish Radisson Blu Hotel & Convention Center is a 5-star hotel in Rwanda’s capital Kigali.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog-box"><img src="images/hotel 3.webp"  alt="#"/>
+                  <!-- <span>10 Feb 2019</span> -->
+                <div class="travel">
+                  <!-- <span>Post  By :  Travel  Agency</span> 
+                  <p><strong class="Comment"> 06 </strong>  Comment</p>
+                  <p><strong class="like">05 </strong>Like</p> -->
+                </div>
+                <h3 style="font-weight: bold; font-size: 25px;">Kigali Marriot Hotel</h3>
+                <p>The beautiful Kigali Marriott Hotel is a 5 star hotel located at KN 3 Avenue in Kigali, This property has free cots available</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog-box"><img src="images/hotel 4.webp"  alt="#"/>
+                  <!-- <span>10 Feb 2019</span> -->
+                <div class="travel">
+                  <!-- <span>Post  By :  Travel  Agency</span> 
+                  <p><strong class="Comment"> 06 </strong>  Comment</p>
+                  <p><strong class="like">05 </strong>Like</p> -->
+                </div>
+                <h3 style="font-weight: bold; font-size: 25px;">Kigali Serena Hotel</h3>
+                <p>The elegant Kigali Serena Hotel is perfectly situated within one of the city’s most vibrant boulevards, and is the best hotel in town for a business stay or to start or end a gorilla safari</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog-box"><img src="images/hotel 5.png"  alt="#"/>
+                  <!-- <span>10 Feb 2019</span> -->
+                <div class="travel">
+                  <!-- <span>Post  By :  Travel  Agency</span> 
+                  <p><strong class="Comment"> 06 </strong>  Comment</p>
+                  <p><strong class="like">05 </strong>Like</p> -->
+                </div>
+                <h3 style="font-weight: bold; font-size: 25px;">Hotel Mille Colline</h3>
+                <p>Welcome to Hotel des Mille Collines The legacy of hospitality in Rwanda for more than 45 years Inspired by Rwanda’s unforgettable geographical terrain</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog-box"><img src="images/hotel 6.webp"  alt="#"/>
+                  <!-- <span>10 Feb 2019</span> -->
+                <div class="travel">
+                  <!-- <span>Post  By :  Travel  Agency</span> 
+                  <p><strong class="Comment"> 06 </strong>  Comment</p>
+                  <p><strong class="like">05 </strong>Like</p> -->
+                </div>
+                <h3 style="font-weight: bold; font-size: 25px;">The Retreat</h3>
+                <p>We also offer private and public transport to those travelling with us and spend your time well enjoying our tour</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog-box"><img src="images/hotel 7.webp"  alt="#"/>
+                  <!-- <span>10 Feb 2019</span> -->
+                <div class="travel">
+                  <!-- <span>Post  By :  Travel  Agency</span> 
+                  <p><strong class="Comment"> 06 </strong>  Comment</p>
+                  <p><strong class="like">05 </strong>Like</p> -->
+                </div>
+                <h3 style="font-weight: bold; font-size: 25px;">Virunga Lodge</h3>
+                <p>Set on a stunning hillside, the magnificent Virunga Lodge boasts panoramic vistas of the Virunga Volcanoes and the beautiful lakes of Ruhondo and Bulera</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog-box"><img src="images/hotel 8.webp"  alt="#"/>
+                  <!-- <span>10 Feb 2019</span> -->
+                <div class="travel">
+                  <!-- <span>Post  By :  Travel  Agency</span> 
+                  <p><strong class="Comment"> 06 </strong>  Comment</p>
+                  <p><strong class="like">05 </strong>Like</p> -->
+                </div>
+                <h3 style="font-weight: bold; font-size: 25px;">Magashi Camp</h3>
+                <p>We also offer private and public transport to those travelling with us and spend your time well enjoying our tour</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog-box"><img src="images/hotel 9.jpg"  alt="#"/>
+                  <!-- <span>10 Feb 2019</span> -->
+                <div class="travel">
+                  <!-- <span>Post  By :  Travel  Agency</span> 
+                  <p><strong class="Comment"> 06 </strong>  Comment</p>
+                  <p><strong class="like">05 </strong>Like</p> -->
+                </div>
+                <h3 style="font-weight: bold; font-size: 25px;">Bisate Lodgel</h3>
+                <p>We also offer private and public transport to those travelling with us and spend your time well enjoying our tour</p>
+            </div>
+          </div>
+      </div>
+    </div>
 
         <header class="section-header">
           <h3 class="section-title">Rent Your Ride</h3>
